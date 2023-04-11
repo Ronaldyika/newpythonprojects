@@ -43,22 +43,68 @@ print('choose any operator from the list \n')
 #for value in operators:
  #   print(value)
 operator = input('enter an operator: ')
-num1 = int(input('enter num1: '))
-num2 = int(input('enter num2: '))
+
 if(operator=='*'):
+    num1 = int(input('enter num1: '))
+    num2 = int(input('enter num2: '))
     mult(num1,num2)
 elif(operator == '+'):
+    num1 = int(input('enter num1: '))
+    num2 = int(input('enter num2: '))
     add(num1, num2)
 elif(operator =='-'):
+    num1 = int(input('enter num1: '))
+    num2 = int(input('enter num2: '))
     subtract(num1, num2)
 elif(operator =='/'):
+    num1 = int(input('enter num1: '))
+    num2 = int(input('enter num2: '))
     divide(num1,num2)
 elif(operator == "!"):
     num = int(input("enter number to compute fact: "))
     factorail(num)
 else:
     print('no such operator!!!!')
-    
+
+print('enter 1 for yes or0 for no \n')
+option =int(input('do you want another computation??: '))
+
+if(option == 1):
+    #print("'*' for multiplication, '+' for addition , '!' for factorail, '/' for division and '-' for subtraction \n")
+
+    #computation done in proper
+    #for value in operators:
+    #   print(value)
+    operator = input('enter an operator: ')
+
+    if(operator=='*'):
+        num1 = int(input('enter num1: '))
+        num2 = int(input('enter num2: '))
+        mult(num1,num2)
+    elif(operator == '+'):
+        num1 = int(input('enter num1: '))
+        num2 = int(input('enter num2: '))
+        add(num1, num2)
+    elif(operator =='-'):
+        num1 = int(input('enter num1: '))
+        num2 = int(input('enter num2: '))
+        subtract(num1, num2)
+    elif(operator =='/'):
+        num1 = int(input('enter num1: '))
+        num2 = int(input('enter num2: '))
+        divide(num1,num2)
+    elif(operator == "!"):
+        num = int(input("enter number to compute fact: "))
+        factorail(num)
+    else:
+        print('no such operator!!!!')
+elif(option == 0):
+    print('nice computations ')
+else:
     exit
+
+
+    
+    
     
     
